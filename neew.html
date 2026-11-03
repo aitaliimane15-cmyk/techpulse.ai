@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPulse.AI - Next-Gen AI Productivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            bg: '#090d16',
+                            card: '#111827',
+                            border: '#1f2937',
+                            neonGreen: '#10b981',
+                            neonPurple: '#a855f7',
+                            neonCyan: '#06b6d4',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+        }
+        .glow-text {
+            text-shadow: 0 0 12px rgba(16, 185, 129, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-cyber-bg text-slate-100 font-sans antialiased min-h-screen selection:bg-emerald-500 selection:text-black">
+
+    <!-- Sticky Cyber Header -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 via-teal-400 to-cyan-500 p-[2px] shadow-lg shadow-emerald-500/20">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                </div>
+                <span class="text-xl font-black tracking-wider text-white">TECHPULSE<span class="text-emerald-400 glow-text">.AI</span></span>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+                <span class="relative flex h-3 w-3">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                </span>
+                <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest hidden sm:inline-block">2026 Live Feeds</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10">
+
+        <!-- Hero Bento Grid Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Main Hero Card (Large - 2 Cols) -->
+            <div class="lg:col-span-2 glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden flex flex-col justify-between group">
+                <div class="absolute -right-10 -top-10 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-emerald-500/20 transition-all"></div>
+                
+                <div class="space-y-4 relative z-10">
+                    <div class="flex items-center space-x-2">
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase tracking-wider border border-emerald-500/30">
+                            🔥 Trending Hack
+                        </span>
+                        <span class="text-xs text-slate-400 font-mono">⚡ 90 SEC READ</span>
+                    </div>
+
+                    <h1 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Stop Prompting. Start Delegating: The 10-Min AI Agent Setup
+                    </h1>
+
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Don't waste time typing 50 prompts a day. Use multi-step autonomous workflows to handle content, emails, and code while you sleep.
+                    </p>
+                </div>
+
+                <!-- Interactive Quick-Action Widget -->
+                <div class="mt-6 pt-6 border-t border-slate-800/80 space-y-3 relative z-10">
+                    <div class="text-xs font-mono text-slate-400 uppercase tracking-wider flex justify-between items-center">
+                        <span>Copy Master Prompt Blueprint</span>
+                        <span class="text-emerald-400">Ready to use</span>
+                    </div>
+                    <div class="bg-slate-950/80 rounded-xl p-3 border border-slate-800 font-mono text-xs text-emerald-300 flex justify-between items-center">
+                        <code class="truncate mr-2">Act as an AI Agent manager. Break this objective into 3 execution steps...</code>
+                        <button onclick="navigator.clipboard.writeText('Act as an AI Agent manager. Break this objective into 3 execution steps...'); alert('Prompt copied!');" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-3 py-1.5 rounded-lg font-bold transition-all text-xs shrink-0 active:scale-95">
+                            Copy 📋
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Bento Card: YouTube Shorts Featured -->
+            <div class="glass-card rounded-3xl p-6 flex flex-col justify-between border-slate-800 hover:border-cyan-500/40 transition-all">
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="px-2.5 py-1 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-bold uppercase">Video Breakdown</span>
+                        <span class="text-xs font-mono text-slate-400">0:45 Short</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Watch How AI Agents Work in Real Time</h3>
+                    <p class="text-xs text-slate-400">Visual breakdown for creators who hate reading long guides.</p>
+                </div>
+
+                <!-- Video Placeholder Container -->
+                <div class="mt-4 aspect-[9/16] w-full max-h-[220px] rounded-2xl bg-slate-950 border border-slate-800 flex items-center justify-center relative overflow-hidden group cursor-pointer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
+                    <div class="w-12 h-12 rounded-full bg-emerald-500/90 text-slate-950 flex items-center justify-center shadow-lg shadow-emerald-500/30 z-20 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6 fill-current ml-1" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                    <span class="absolute bottom-3 left-3 text-xs font-bold text-white z-20">Tap to Play Short</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Quick Filters -->
+        <div class="flex items-center space-x-3 overflow-x-auto pb-2 scrollbar-none">
+            <button class="px-4 py-2 rounded-xl bg-emerald-500 text-slate-950 font-bold text-xs shrink-0 shadow-lg shadow-emerald-500/20">All Quick Insights</button>
+            <button class="px-4 py-2 rounded-xl glass-card text-slate-300 hover:text-white font-medium text-xs shrink-0 hover:border-emerald-500/30">⚡ 1-Min Hacks</button>
+            <button class="px-4 py-2 rounded-xl glass-card text-slate-300 hover:text-white font-medium text-xs shrink-0 hover:border-emerald-500/30">🤖 Agent Workflows</button>
+            <button class="px-4 py-2 rounded-xl glass-card text-slate-300 hover:text-white font-medium text-xs shrink-0 hover:border-emerald-500/30">💰 High CPC Tools</button>
+        </div>
+
+        <!-- Micro-Articles Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Card 1 -->
+            <article class="glass-card rounded-2xl p-5 flex flex-col justify-between space-y-4 transition-all">
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between text-xs font-mono text-emerald-400">
+                        <span>TOOLS • 2026</span>
+                        <span>1 MIN READ</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white hover:text-emerald-400 transition-colors">
+                        Top 3 Autonomous AI Tools You Should Use Right Now
+                    </h3>
+                    <p class="text-xs text-slate-400 line-clamp-2">
+                        Forget basic chatbots. These 3 tools perform full tasks, auto-edit files, and deploy code directly.
+                    </p>
+                </div>
+                <button class="w-full py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-bold text-emerald-400 hover:bg-emerald-500 hover:text-slate-950 transition-all">
+                    Read 60-Sec Summary →
+                </button>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="glass-card rounded-2xl p-5 flex flex-col justify-between space-y-4 transition-all">
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between text-xs font-mono text-cyan-400">
+                        <span>AUTOMATION</span>
+                        <span>2 MIN READ</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white hover:text-cyan-400 transition-colors">
+                        How to Auto-Generate YouTube Shorts Using AI APIs
+                    </h3>
+                    <p class="text-xs text-slate-400 line-clamp-2">
+                        Connect Claude to video generation APIs to publish daily Shorts without touching a video editor.
+                    </p>
+                </div>
+                <button class="w-full py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-bold text-cyan-400 hover:bg-cyan-400 hover:text-slate-950 transition-all">
+                    View Workflow →
+                </button>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="glass-card rounded-2xl p-5 flex flex-col justify-between space-y-4 transition-all">
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between text-xs font-mono text-purple-400">
+                        <span>PROMPT HACKS</span>
+                        <span>1 MIN READ</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white hover:text-purple-400 transition-colors">
+                        The 'Role-Task-Constraint' Rule for 10x Better Outputs
+                    </h3>
+                    <p class="text-xs text-slate-400 line-clamp-2">
+                        The simple 3-part framework that stops AI hallucination and gives crisp results every time.
+                    </p>
+                </div>
+                <button class="w-full py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-bold text-purple-400 hover:bg-purple-500 hover:text-slate-950 transition-all">
+                    Get Template →
+                </button>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="border-t border-slate-800/60 mt-16 py-6 text-center font-mono text-xs text-slate-500">
+        <p>© 2026 TechPulse.AI — Fast-Paced High CPC Productivity Engine.</p>
+    </footer>
+
+</body>
+</html>
