@@ -3,39 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechPulse AI</title>
+    <title>TechPulse AI - Latest Tech Insights</title>
     <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
+            padding: 0;
+            line-height: 1.7;
         }
         header {
-            background: #007bff;
-            color: #fff;
-            padding: 1rem;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-bottom: 1px solid #334155;
+            padding: 2.5rem 1rem;
             text-align: center;
         }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #60a5fa, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        header p {
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+        }
         main {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+        article {
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            color: #60a5fa;
+            margin-top: 0;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            border-top: 1px solid #334155;
+            margin-top: 4rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>TechPulse AI Articles</h1>
+        <h1>TechPulse AI</h1>
+        <p>Your Daily Dose of Automated Artificial Intelligence & Technology Insights</p>
     </header>
+    
     <main>
-        <h2>Welcome to TechPulse AI</h2>
-        <p>This page is automatically updated with AI-generated tech articles.</p>
+        <article>
+            <h2>Latest Intelligence Report</h2>
+            <div>
+                <!-- AI Generated Content will be injected here -->
+                <p>Welcome to the forefront of technology innovation. This space is dynamically updated by automated AI agents delivering state-of-the-art tech articles straight to the web.</p>
+            </div>
+        </article>
     </main>
+
+    <footer>
+        <p>&copy; 2026 TechPulse AI. Powered by Make & GitHub Automation.</p>
+    </footer>
 </body>
 </html>
